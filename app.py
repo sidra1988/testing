@@ -9,4 +9,8 @@ mid = st.number_input("Enter Mid Marks", min_value=0.0, max_value=100.0)
 
 if st.button("Predict"):
     result = model.predict([[mid]])
-    st.write("Predicted Final Marks:", round(result[0], 2))
+    
+    # FIX HERE 👇
+    final_marks = float(result[0])
+    
+    st.write("Predicted Final Marks:", round(final_marks, 2))
