@@ -12,7 +12,7 @@ if st.button("Predict"):
     
     # FIX HERE 👇
     st.write("DEBUG result:", result)
-st.write("DEBUG type:", type(result))
+    st.write("DEBUG type:", type(result))
     final_marks = float(result[0])
     
     st.write("Predicted Final Marks:", round(final_marks, 2))
